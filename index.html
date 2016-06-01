@@ -10,6 +10,20 @@
 
 </head>
 <body>
-<script type="text/babel"></script>
+
+<div id="react-container">
+    <script type="text/babel">
+        var MyComponent = React.createClass({
+           render:function () {
+               return (
+                       <h1>My Componenet</h1>
+               );
+           }
+        });
+
+        React.render(<MyComponent/>, document.getElementById('react-container'));
+    </script>
+</div>
+
 </body>
 </html>

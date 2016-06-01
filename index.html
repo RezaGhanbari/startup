@@ -21,7 +21,13 @@
            }
         });
 
-        React.render(<MyComponent/>, document.getElementById('react-container'));
+        React.render(
+                <section>
+                    <MyComponent/>
+                    <MyComponent/>
+                    <MyComponent/>
+                </section>
+                , document.getElementById('react-container'));
     </script>
 </div>
 
